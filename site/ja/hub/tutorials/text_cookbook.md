@@ -59,7 +59,7 @@ When we want to find out which sentences correlate with each other in zero-shot 
 
 ### SentencePiece 入力
 
-[Semantic similarity with universal encoder lite](https://github.com/tensorflow/hub/blob/master/examples/colab/semantic_similarity_with_tf_hub_universal_encoder_lite.ipynb) - shows how to use sentence encoder modules that accept [SentencePiece](https://github.com/google/sentencepiece) ids on input instead of text.
+[ユニバーサルエンコーダー Lite による意味的類似性](https://github.com/tensorflow/hub/blob/master/examples/colab/semantic_similarity_with_tf_hub_universal_encoder_lite.ipynb) - テキストの代わりに入力の [SentencePiece](https://github.com/google/sentencepiece) id を受け付ける文章エンコーダモジュールの使用方法を示します。
 
 ## モジュールの作成
 
@@ -67,6 +67,6 @@ Instead of using only modules on [tfhub.dev](https://tfhub.dev), there are ways 
 
 ### 既存のトレーニング済みの埋め込みをラッピングする
 
-[Text embedding module exporter](https://github.com/tensorflow/hub/blob/master/examples/text_embeddings/export.py) - a tool to wrap an existing pre-trained embedding into a module. Shows how to include text pre-processing ops into the module. This allows to create a sentence embedding module from token embeddings.
+[テキスト埋め込みモジュールエクスポータ](https://github.com/tensorflow/hub/blob/master/examples/text_embeddings/export.py) - 既存のトレーニング済みの埋め込みをモジュールにラッピングするツールです。テキストの事前処理演算をモジュールに含める方法を示します。こうすることで、トークン埋め込みから文章埋め込みを作成することが可能となります。
 
 [テキスト埋め込みモジュールエクスポータ v2](https://github.com/tensorflow/hub/blob/master/examples/text_embeddings_v2/export_v2.py) - 上記と同じですが、TensorFlow 2 と Eager execution との互換性があります。
